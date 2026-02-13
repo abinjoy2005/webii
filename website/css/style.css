@@ -1,0 +1,157 @@
+body{
+margin:0;
+font-family:Arial;
+overflow-x:hidden;
+}
+
+/* FLOATING HEARTS */
+.heart{
+position:fixed;
+color:#ff2f6e;
+font-size:20px;
+animation:float 6s linear infinite;
+opacity:0.7;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-10vh);}
+}
+
+/* LOGIN PAGE */
+
+.login-body{
+background:linear-gradient(45deg,#ff4e8a,#ff9eb5);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.login-box{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+width:320px;
+box-shadow:0 0 25px #ff2f6e;
+}
+
+.quote{
+color:#ff2f6e;
+font-style:italic;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px;
+border-radius:10px;
+}
+
+button{
+background:#ff2f6e;
+color:white;
+padding:10px;
+border:none;
+border-radius:15px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+.error{color:red;}
+
+/* GALLERY */
+
+.gallery-body{
+background:#ffe6ee;
+text-align:center;
+}
+
+.title{
+color:#ff2f6e;
+margin-top:20px;
+text-shadow:0 0 10px #ff2f6e;
+}
+
+.slider-container{
+perspective:1200px;
+height:500px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.slider{
+position:relative;
+width:420px;
+height:420px;
+transform-style:preserve-3d;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:25px;
+opacity:0;
+transform:rotateY(90deg) scale(0.8);
+transition:all 1s ease;
+box-shadow:0 0 30px #ff2f6e;
+}
+
+.slide.active{
+opacity:1;
+transform:rotateY(0deg) scale(1);
+}
+
+.love-overlay{
+position:absolute;
+bottom:20px;
+width:100%;
+color:white;
+font-size:28px;
+text-shadow:0 0 20px #ff2f6e;
+}
+
+/* NOTE PAGE */
+
+.note-body{
+background:#ffe6ee;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.note-box{
+background:white;
+padding:40px;
+border-radius:25px;
+width:420px;
+box-shadow:0 0 30px #ff2f6e;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{box-shadow:0 0 20px #ff2f6e;}
+to{box-shadow:0 0 40px #ff9eb5;}
+}
+
+.note-btn{
+margin-top:30px;
+}
+
+.note-btn a{
+background:#ff2f6e;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+border-radius:20px;
+}
+
